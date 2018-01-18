@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout2">
+
+    <AutoCompleteTextView
+        android:id="@+id/codemat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Buscar por Codigo"
+        android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textInputLayout2"
+        android:layout_marginTop="21dp"
+        android:text="o "
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textInputLayout2"
+        android:layout_marginTop="21dp"
+        android:text="Buscar con Codigo QR:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <Button
+        android:id="@+id/buttonM"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/bk_boton_plano"
+        android:text="Escanear"
+        android:drawableLeft="@drawable/buscarqr"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollvertical"
+        android:layout_below="@+id/textInputLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/scrollhorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:id="@+id/tabla"
+                    android:layout_below="@+id/textInputLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TableLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputLayout3">
+
+            <AutoCompleteTextView
+                android:id="@+id/cantModPod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollvertical"
+                android:ems="10"
+                android:hint="Nueva Cantidad"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonMenosM"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/textInputLayout3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/buttonMasM"
+            android:background="@drawable/bk_boton_plano"
+            android:fontFamily="sanf-serif"
+            android:text="-"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/buttonMasM"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/buttonMenosM"
+            android:layout_alignBottom="@+id/buttonMenosM"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bk_boton_plano"
+            android:fontFamily="sanf-serif"
+            android:text="+"
+            android:textAlignment="center" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonGuardarM"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/buttonMenosM"
+        android:layout_alignBottom="@+id/buttonMenosM"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bk_boton_plano"
+        android:fontFamily="sanf-serif"
+        android:layout_marginTop="10dp"
+        android:text="Guardar Cambios"
+        android:drawableLeft="@drawable/cueromodif"
+        android:textAlignment="center" />
+</LinearLayout>

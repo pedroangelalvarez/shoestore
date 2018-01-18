@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Array con los valores de la cabecera de la tabla-->
+    <string-array name="cabecera_tablaMatPrima">
+        <item>Codigo</item>
+        <item>Nombre</item>
+        <item>Precio</item>
+        <item>Punto de Reorden</item>
+        <item>Cantidad</item>
+        <item>Unidad de Medida</item>
+    </string-array>
+    <string-array name="cabecera_tablaProd">
+        <item>Codigo</item>
+        <item>Nombre</item>
+        <item>Cantidad</item>
+        <item>Punto de Reorden</item>
+        <item>Precio</item>
+        <item>Talla</item>
+        <item>Caracteristica</item>
+        <item>Marca</item>
+        <item>Color</item>
+    </string-array>
+</resources>

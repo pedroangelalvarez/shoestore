@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:background="@drawable/bk_boton_plano"
+        android:drawableLeft="@drawable/cueroadd"
+        android:layout_centerVertical="true"
+        android:text="Añadir" />
+
+    <Button
+        android:id="@+id/btSearch"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/btAdd"
+        android:layout_below="@+id/btAdd"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/bk_boton_plano"
+        android:drawableLeft="@drawable/cuerobuscar"
+        android:text="Buscar" />
+
+    <Button
+        android:id="@+id/btList"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/btSearch"
+        android:layout_below="@+id/btSearch"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/bk_boton_plano"
+        android:drawableLeft="@drawable/cuerolistar"
+        android:text="Listar" />
+</RelativeLayout>
